@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operacijski sustavi</title>
+
+<style>
+
+body {
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1{
+ text-align:center;
+ color:#2c3e50;
+ border-bottom: 3px solid #3498db;
+ padding-bottom:10px;
+}
+
+ h2 {
+ color: #34495e;
+ margin-top: 10px;
+ font-weight:600;
+ }
+ 
+ p{
+ color:#555;
+ line-height:1.7;
+ margin-top: 15px;
+ text-align: center;
+ }
+ 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #e8f2f8;
+  border-left: 5px solid #3498db;
+  padding: 30px;
+  width: 320px;
+  border-radius: 15px;
+  text-align: center;
+  margin-top:10px;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.1),
+    0 20px 40px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+ 
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  
+  <div class="menu">
+    <a href="operacijskisustav.html">Operacijski sustavi</a>
+    <a href="Oszamobilneuređaje.html">Operacijski sustavi za mobilne uređaje</a>
+    <a href="Operacijskisustavizaračunala.html">Operacijski sustavi za računala</a>
+   
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Operacijski sustavi</h1>
+</section>
+
+<p>Upoznajte se sa najraširenijim operacijskim sustavima današnjice. Sve što trebate znati na jednom mjestu</p>
+<section class="cards">
+
+  <div class="card">
+    <h3>Što je OS?</h3>
+    <p>Operacijski sustav skup je osnovnih programa koji upravljaju sklopovljem računala i omogućuju izvođenje operacija na vašem računalu.</p>	
+   </div>
+
+  <div class="card">
+    <h3>Operacijski sustavi za mobilne uređaje</h3>
+    <p>Upoznajte se sa najdominantnijim operacijskim sustavima za mobilne uređaje današnjice, Androidom i IOS-om i saznajte neke sličnosti i razlike između ta dva operacijska sustava.</p>
+  </div>
+
+  <div class="card">
+    <h3>Operacijski sustavi za računala</h3>
+    <p>Kupujete novo računalo, a ne znate za koji se OS odlučiti? Na pravom ste mjestu. Pročitajte nešto više o Linux-u, Windows-u i MacOS-u upravo ovdje.</p>
+  </div>
+
+</section>
+
+</body>
+</html>
